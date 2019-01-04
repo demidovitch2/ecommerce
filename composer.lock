@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "deb82c299698843dc800c54775720bc5",
+    "content-hash": "195990b664a13e070f2302932d3067a9",
     "packages": [
         {
             "name": "container-interop/container-interop",
@@ -85,39 +85,45 @@
         },
         {
             "name": "phpmailer/phpmailer",
-            "version": "v5.2.22",
+            "version": "v6.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPMailer/PHPMailer.git",
-                "reference": "b18cb98131bd83103ccb26a888fdfe3177b8a663"
+                "reference": "8190d73eb5def11a43cfb020b7f36db65330698c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHPMailer/PHPMailer/zipball/b18cb98131bd83103ccb26a888fdfe3177b8a663",
-                "reference": "b18cb98131bd83103ccb26a888fdfe3177b8a663",
+                "url": "https://api.github.com/repos/PHPMailer/PHPMailer/zipball/8190d73eb5def11a43cfb020b7f36db65330698c",
+                "reference": "8190d73eb5def11a43cfb020b7f36db65330698c",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.0.0"
+                "ext-ctype": "*",
+                "ext-filter": "*",
+                "php": ">=5.5.0"
             },
             "require-dev": {
-                "phpdocumentor/phpdocumentor": "*",
-                "phpunit/phpunit": "4.7.*"
+                "doctrine/annotations": "1.2.*",
+                "friendsofphp/php-cs-fixer": "^2.2",
+                "phpdocumentor/phpdocumentor": "2.*",
+                "phpunit/phpunit": "^4.8 || ^5.7",
+                "zendframework/zend-eventmanager": "3.0.*",
+                "zendframework/zend-i18n": "2.7.3",
+                "zendframework/zend-serializer": "2.7.*"
             },
             "suggest": {
-                "league/oauth2-google": "Needed for Google XOAUTH2 authentication"
+                "ext-mbstring": "Needed to send email in multibyte encoding charset",
+                "hayageek/oauth2-yahoo": "Needed for Yahoo XOAUTH2 authentication",
+                "league/oauth2-google": "Needed for Google XOAUTH2 authentication",
+                "psr/log": "For optional PSR-3 debug logging",
+                "stevenmaguire/oauth2-microsoft": "Needed for Microsoft XOAUTH2 authentication",
+                "symfony/polyfill-mbstring": "To support UTF-8 if the Mbstring PHP extension is not enabled (^1.2)"
             },
             "type": "library",
             "autoload": {
-                "classmap": [
-                    "class.phpmailer.php",
-                    "class.phpmaileroauth.php",
-                    "class.phpmaileroauthgoogle.php",
-                    "class.smtp.php",
-                    "class.pop3.php",
-                    "extras/EasyPeasyICS.php",
-                    "extras/ntlm_sasl_client.php"
-                ]
+                "psr-4": {
+                    "PHPMailer\\PHPMailer\\": "src/"
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -141,7 +147,7 @@
                 }
             ],
             "description": "PHPMailer is a full-featured email creation and transfer class for PHP",
-            "time": "2017-01-09T09:33:47+00:00"
+            "time": "2018-11-16T00:41:32+00:00"
         },
         {
             "name": "pimple/pimple",
@@ -294,17 +300,20 @@
         },
         {
             "name": "rain/raintpl",
-            "version": "3.0.0",
+            "version": "3.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rainphp/raintpl3.git",
-                "reference": "5bfdf4602b8adb0e80b222fa29ac559aa9c06abf"
+                "reference": "5fc655b59cb3d541755116a09fc4c0206b301923"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rainphp/raintpl3/zipball/5bfdf4602b8adb0e80b222fa29ac559aa9c06abf",
-                "reference": "5bfdf4602b8adb0e80b222fa29ac559aa9c06abf",
+                "url": "https://api.github.com/repos/rainphp/raintpl3/zipball/5fc655b59cb3d541755116a09fc4c0206b301923",
+                "reference": "5fc655b59cb3d541755116a09fc4c0206b301923",
                 "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3"
             },
             "type": "library",
             "autoload": {
@@ -313,15 +322,22 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
             "authors": [
                 {
                     "name": "Federico Ulfo",
                     "email": "rainelemental@gmail.com",
                     "homepage": "http://github.com/rainphp"
+                },
+                {
+                    "name": "Rain Community"
                 }
             ],
             "description": "easy and fast template engine",
-            "time": "2012-12-24T05:24:32+00:00"
+            "homepage": "http://raintpl.com",
+            "time": "2013-11-10T18:36:47+00:00"
         },
         {
             "name": "slim/slim",
