@@ -13,7 +13,8 @@
     },
     "autoload": {
         "psr-4": {
-            "db\\": "vendor\\demidovitch\\php-classes\\src\\DB"
+            "db\\": "vendor\\demidovitch\\php-classes\\src\\DB",
+            "util\\": "vendor\\demidovitch\\php-classes\\src\\UTIL"
         }
     }
 }

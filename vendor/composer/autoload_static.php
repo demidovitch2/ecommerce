@@ -11,6 +11,10 @@ class ComposerStaticInitc8627860959885c2453d71739bf012bc
     );
 
     public static $prefixLengthsPsr4 = array (
+        'u' => 
+        array (
+            'util\\' => 5,
+        ),
         'd' => 
         array (
             'db\\' => 3,
@@ -36,6 +40,10 @@ class ComposerStaticInitc8627860959885c2453d71739bf012bc
     );
 
     public static $prefixDirsPsr4 = array (
+        'util\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/demidovitch/php-classes/src/UTIL',
+        ),
         'db\\' => 
         array (
             0 => __DIR__ . '/..' . '/demidovitch/php-classes/src/DB',

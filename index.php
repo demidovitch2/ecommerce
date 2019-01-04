@@ -1,7 +1,7 @@
 <?php 
 
 require_once("vendor/autoload.php");
-use \db\Sql;
+use \util\Page;
 
 $config['displayErrorDetails'] = true;
 $config['addContentLengthHeader'] = true;
@@ -12,11 +12,9 @@ $app = new \Slim\App(['settings' => $config]);
 
 $app->get('/', function() {
     
-	$sql = new Sql();
+	$page = new Page();
 
-	$results = $sql->select("SELECT * FROM tb_users");
-
-	echo json_encode($results);
+	$page->setTpl("index");
 
 });
 
