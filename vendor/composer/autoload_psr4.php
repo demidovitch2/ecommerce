@@ -7,6 +7,7 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'util\\' => array($vendorDir . '/demidovitch/php-classes/src/UTIL'),
+    'model\\' => array($vendorDir . '/demidovitch/php-classes/src/MODEL'),
     'db\\' => array($vendorDir . '/demidovitch/php-classes/src/DB'),
     'Slim\\' => array($vendorDir . '/slim/slim/Slim'),
     'Psr\\Http\\Message\\' => array($vendorDir . '/psr/http-message/src'),

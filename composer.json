@@ -14,7 +14,8 @@
     "autoload": {
         "psr-4": {
             "db\\": "vendor\\demidovitch\\php-classes\\src\\DB",
-            "util\\": "vendor\\demidovitch\\php-classes\\src\\UTIL"
+            "util\\": "vendor\\demidovitch\\php-classes\\src\\UTIL",
+            "model\\": "vendor\\demidovitch\\php-classes\\src\\MODEL"
         }
     }
 }

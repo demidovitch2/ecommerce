@@ -15,6 +15,10 @@ class ComposerStaticInitc8627860959885c2453d71739bf012bc
         array (
             'util\\' => 5,
         ),
+        'm' => 
+        array (
+            'model\\' => 6,
+        ),
         'd' => 
         array (
             'db\\' => 3,
@@ -43,6 +47,10 @@ class ComposerStaticInitc8627860959885c2453d71739bf012bc
         'util\\' => 
         array (
             0 => __DIR__ . '/..' . '/demidovitch/php-classes/src/UTIL',
+        ),
+        'model\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/demidovitch/php-classes/src/MODEL',
         ),
         'db\\' => 
         array (
