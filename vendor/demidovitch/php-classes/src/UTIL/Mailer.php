@@ -84,6 +84,3 @@ class Mailer
 		return $this->mail ->send();
 		}
 }
-
-
- ?>
